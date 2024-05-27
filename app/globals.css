@@ -31,3 +31,41 @@ body {
     text-wrap: balance;
   }
 }
+
+
+.yt-icon {
+  color: red;
+}
+
+.search-container {
+  border-style: solid;
+  border-width: 1px;
+}
+
+.tags-container {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+.tags-container::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+
+.tags-container::before {
+  content: "";
+  position: fixed;
+  left: 0;
+  width: 100px;
+  height: 100%;
+  background: linear-gradient(90deg, black 80%, transparent);
+  z-index: 20;
+}
+
+.tags-container::after {
+  content: " ";
+  position: fixed;
+  right: 0;
+  width: 100px;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, black);
+  z-index: 20;
+}
